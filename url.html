@@ -5,20 +5,8 @@
     const url = new URL(window.location.href);
     const params = new URLSearchParams(url.search);
     const type = params.get("type");
-    var responseUrl = null;
-
-    if (type == "1") {
-        responseUrl = "https://apis.naver.com/cafe-web/cafe-mobile/CafeMobileWebArticleSearchListV3?cafeId=10050146&searchBy=1&sortBy=date&adUnit=MW_CAFE_BOARD&ad=true"
-    }
-    else if (type == "2") {
-        responseUrl = "https://api.bunjang.co.kr/api/1/find_v2.json?order=date&stat_device=w&n=100&stat_category_required=1&req_ref=search&version=4"
-    }
-    else if (type == "3") {
-        responseUrl = "https://apis.naver.com/cafe-web/cafe2/SideMenuList?cafeId=10050146"
-    }
-    else if (type == "4") {
-        responseUrl = "https://api.bunjang.co.kr/api/1/categories/list.json"
-    }
+    var responseUrl = 
+        {"a" : "https://apis.naver.com/cafe-web/cafe-mobile/CafeMobileWebArticleSearchListV3?cafeId=10050146&searchBy=1&sortBy=date&adUnit=MW_CAFE_BOARD&ad=true", "b" : "https://api.bunjang.co.kr/api/1/find_v2.json?order=date&stat_device=w&n=100&stat_category_required=1&req_ref=search&version=4", "c" : "https://apis.naver.com/cafe-web/cafe2/SideMenuList?cafeId=10050146", "d" :  "https://api.bunjang.co.kr/api/1/categories/list.json"}
 
     document.getElementById("result").textContent = responseUrl;
 </script>
