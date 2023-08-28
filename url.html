@@ -6,7 +6,7 @@
     const params = new URLSearchParams(url.search);
     const type = params.get("type");
     var responseUrl = 
-        '{"jnItemList" : "https://apis.naver.com/cafe-web/cafe-mobile/CafeMobileWebArticleSearchListV3?cafeId=10050146&searchBy=1&sortBy=date&adUnit=MW_CAFE_BOARD&ad=true", "bjItemList" : "https://api.bunjang.co.kr/api/1/find_v2.json?order=date&stat_device=w&n=100&stat_category_required=1&req_ref=search&version=4", "jnCategoryList" : "https://apis.naver.com/cafe-web/cafe2/SideMenuList?cafeId=10050146", "bjCategoryList" :  "https://api.bunjang.co.kr/api/1/categories/list.json"}''
+        '{"jnItemList" : "https://apis.naver.com/cafe-web/cafe-mobile/CafeMobileWebArticleSearchListV3?cafeId=10050146&searchBy=1&sortBy=date&adUnit=MW_CAFE_BOARD&ad=true", "bjItemList" : "https://api.bunjang.co.kr/api/1/find_v2.json?order=date&stat_device=w&n=100&stat_category_required=1&req_ref=search&version=4", "jnCategoryList" : "https://apis.naver.com/cafe-web/cafe2/SideMenuList?cafeId=10050146", "bjCategoryList" :  "https://api.bunjang.co.kr/api/1/categories/list.json"}'
 
     document.getElementById("result").textContent = responseUrl;
 </script>
